@@ -14,7 +14,7 @@ public class Testing {
 		driver.get("http://localhost:8899/qaenv/");
 		System.out.println(driver.getCurrentUrl());
 		String expmsg="Hello, World!";
-		String actmsg=driver.findElement(By.xpath("html/body")).getText();
+		String actmsg=driver.findElement(By.xpath("html/body/h1")).getText();
 		System.out.println("Expected Message : "+expmsg);
 		System.out.println("Actual Message   : "+actmsg);
 		if(expmsg.equals(actmsg))
