@@ -24,6 +24,7 @@ public class Testing {
 		else
 		{
 			System.out.println("Testing has Failed");
+			System.out.println(actmsg);
 		}
 		driver.close();
 	}
