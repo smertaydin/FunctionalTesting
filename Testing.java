@@ -16,7 +16,7 @@ public class Testing {
 		driver.get("http://127.0.0.1:8080/testapp/");
 		System.out.println(driver.getCurrentUrl());
 		String expmsg="Hi!";
-		String actmsg=driver.findElement(By.xpath("html/body")).getText();
+		String actmsg=driver.findElement(By.xpath("html/body/h1")).getText();
 		System.out.println("Expected  : "+expmsg);
 		System.out.println("Actual Message   : "+actmsg);
 		if(expmsg.equals(actmsg))
